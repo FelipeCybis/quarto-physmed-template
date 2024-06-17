@@ -19,7 +19,6 @@ contributes:
         data-background-color: "#562457"
       menu:
           numbers: true
-      chalkboard: true
       scrollable: true
       preview-links: false
       view-distance: 10
