@@ -1,0 +1,28 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$
+$it.key$="$it.value$"$endfor$>
+  <div style="display: flex; height: 850px;">
+    <div style="flex: 1; height: 100%; align-items: center; border-right: 1px solid
+    #fff; padding-right: 40px;">
+      <img src=$title-image$ style="height: 100%; left: 0px;">
+    </div>
+    <div style="display: flex; flex-direction: column; flex: 3; padding: 10px;
+    align-items: left; justify-content: center; margin-left: 3%;">
+        <h1 class="title">$title$</h1>
+      $if(subtitle)$
+        <p class="subtitle">$subtitle$</p>
+      $endif$
+      $for(author)$
+        <p class="author">$author$</p>
+      $endfor$
+      $for(supervisors)$
+        <p class="supervisors">$supervisors$</p>
+      $endfor$
+      $for(institute)$
+        <p class="institute">$institute$</p>
+      $endfor$
+      $if(date)$
+        <p class="date">$date$</p>
+      $endif$
+    </div>
+  </div>
+  </section>

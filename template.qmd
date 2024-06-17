@@ -1,0 +1,63 @@
+---
+execute: 
+  enabled: true
+format:
+    physmedjs-revealjs:
+        title: My awesome Physmed template presentation with a multiline title
+        author: Author name
+        supervisors: "Supervisors or other stuff"
+        institute: Physics for Medicine Paris, ESPCI Paris, PSL University, Inserm U1273, CNRS UMR 8063
+---
+
+## {.center}
+
+::: {style="font-size: 2.5em"}
+This is a slide without a title. It has white background and a logo in the top right.
+:::
+
+
+## {.center background-color="#000"}
+
+::: {style="font-size: 2.5em"}
+Maybe you want to contrast an awesome ULM image with black background? The logo in the top right is now white.
+:::
+
+## Maybe like this? {background-color="#000"}
+
+<!-- ::: {.alternative-slide-logo style="display: block !important;position: absolute !important;top: 0; right:0; max-height: 8% !important;height: 100% !important;width: auto !important; background-color:aqua;"}
+<p><img src="img/footer_physmed_iconeus_white.svg"></p>
+::: -->
+::: {.r-stack}
+{{< video https://www.youtube.com/watch?v=gfKZ0JaY-0M width="1700" aspect-ratio="16x9" >}}
+:::
+
+## Contents
+
+Some example slides - [also look at example RevealJS slides in the Quarto docs](https://quarto.org/docs/presentations/revealjs/)
+
+* Non-executable and executable code-blocks
+* bullet points with highlighting 
+* two-column slides 
+* how to include a slide from a separate MD file
+* preview and link to a webpage
+
+## Just a code block, nothing gets executed...
+
+... but there is some fancy highlighting
+
+```{.python code-line-numbers="1|3|4-9"}
+from pathlib import Path
+
+home_path = Path.home()
+if home_path.exists():
+  data_path = home_path / "data"
+else:
+  pass
+  # raise some error maybe?
+```
+
+::: {style="font-size: 2em"}
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+And some cool fragment animations <span class="fragment contour">that contour</span> some words for <span class="fragment contour">emphasys</span>.
+:::

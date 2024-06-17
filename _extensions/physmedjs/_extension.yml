@@ -1,0 +1,31 @@
+title: Physmed Presentation Template
+author: Felipe Cybis Pereira
+version: 1.0.0
+quarto-required: ">=1.5.44"
+contributes:
+  formats:
+    revealjs:
+      slide-number: c/t
+      highlight-style: github-dark
+      theme: physmed.scss
+      template-partials: 
+          - title-slide.html
+      footer: |
+        <a href="https://physicsformedicine.espci.fr/">physicsformedicine.espci.fr</a>
+      logo: logo_physmed.svg
+      title-image: logos_physmed_inst.svg
+      title-slide-attributes: 
+        data-background-image: background_swirl.png
+        data-background-color: "#562457"
+      menu:
+          numbers: true
+      chalkboard: true
+      scrollable: true
+      preview-links: false
+      view-distance: 10
+      mobile-view-distance: 10
+      auto-animate: true
+      auto-play-media: true
+      code-overflow: wrap
+      height: 1080
+      width: 1920
