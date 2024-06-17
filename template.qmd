@@ -25,9 +25,6 @@ Maybe you want to contrast an awesome ULM image with black background? The logo 
 
 ## Maybe like this? @renaudinFunctionalUltrasoundLocalization2022 {background-color="#000"}
 
-<!-- ::: {.alternative-slide-logo style="display: block !important;position: absolute !important;top: 0; right:0; max-height: 8% !important;height: 100% !important;width: auto !important; background-color:aqua;"}
-<p><img src="img/footer_physmed_iconeus_white.svg"></p>
-::: -->
 ::: {.r-stack}
 {{< video https://www.youtube.com/watch?v=gfKZ0JaY-0M width="1700" aspect-ratio="16x9" >}}
 :::
