@@ -2,6 +2,7 @@
 execute: 
   enabled: true
 bibliography: ref.bib
+suppress-bibliography: true
 format:
     physmedjs-revealjs:
         title: My awesome Physmed template presentation with a multiline title
@@ -59,3 +60,7 @@ else:
 <p>&nbsp;</p>
 And some cool fragment animations <span class="fragment contour">that contour</span> some words for <span class="fragment contour">emphasys</span>.
 :::
+
+## {#final-slide .center background-image=_extensions/physmedjs/background_swirl.png background-color="#000"}
+
+<h1>Thank you</h1>
