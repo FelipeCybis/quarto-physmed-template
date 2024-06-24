@@ -4,7 +4,7 @@ execute:
 bibliography: ref.bib
 suppress-bibliography: true
 format:
-    physmedjs-revealjs:
+    physmed-revealjs:
         title: My awesome Physmed template presentation with a multiline title
         author: Author name
         supervisors: "Supervisors or other stuff"
@@ -61,6 +61,6 @@ else:
 And some cool fragment animations <span class="fragment contour">that contour</span> some words for <span class="fragment contour">emphasys</span>.
 :::
 
-## {#final-slide .center background-image=_extensions/physmedjs/background_swirl.png background-color="#000"}
+## {#final-slide .center background-image=_extensions/physmed/background_swirl.png background-color="#000"}
 
 <h1>Thank you</h1>

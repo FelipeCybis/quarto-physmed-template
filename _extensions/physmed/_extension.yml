@@ -16,7 +16,7 @@ contributes:
       title-image: logos_physmed_inst.svg
       title-slide-attributes: 
         data-background-image: background_swirl.png
-        data-background-color: "#562457"
+        data-background-color: "#000"
       menu:
           numbers: true
       scrollable: true

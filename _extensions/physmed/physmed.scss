@@ -80,18 +80,3 @@ $presentation-title-slide-text-align: "left";
     margin-left: -5px;
     margin-right: -5px;
 }
-
-.reveal .slides section .fragment.semi-fade-out.visible{
-    opacity:.2;
-    visibility:inherit
-}
-
-.contoured {
-    border: 3px solid #1b78b4;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    margin-left: -5px;
-    margin-right: -5px;
-}
