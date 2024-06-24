@@ -1,6 +1,7 @@
 # Quarto Physmed revealjs template
 
-A revealjs slide template for the Physics for Medicine Paris institute.
+A revealjs slide template for the Physics for Medicine Paris institute. Very much
+inspired by formats found in [Awesome quarto#Presentation formats](https://github.com/mcanouil/awesome-quarto?tab=readme-ov-file#real-life-examples)
 <a href='https://felipecybis.github.io/quarto-rladies-theme/' target='_blank'>
 <img src="output.gif" width="100%"/></a>
 
