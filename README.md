@@ -37,8 +37,6 @@ that bundles the **physmed** theme plus a .qmd starter document. This is a bette
 option if you are starting a new project from scratch, since it will automatically
 create a new directory with all of the necessary scaffolding in one go.
 
-- Bare bones template
-
 ```bash
 quarto use template felipecybis/quarto-pythmed-template
 ```
