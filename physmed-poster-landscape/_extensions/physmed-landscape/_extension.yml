@@ -1,0 +1,22 @@
+title: Physmed Landscape Poster
+author: Felipe Cybis Pereira
+version: 1.0.0
+quarto-required: ">=1.4.415"
+contributes:
+  formats:
+    typst:
+      paper: "a0"
+      flipped: true
+      title-font-size: 82
+      title-column-size: 36
+      title-row-size: 5
+      univ-logo-column-size: 5
+      institution-logo: "_extensions/physmed-landscape/images/banner-poster-physmed-logos-landscape.png"
+      authors-font-size: 40
+      department-font-size: 38 
+      footer-url-font-size: 40
+      footer-text-font-size: 53
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
+
