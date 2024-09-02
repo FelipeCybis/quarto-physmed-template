@@ -1,42 +1,23 @@
-# Quarto Physmed revealjs template
+## Physmed Templates for Quarto
 
-A revealjs slide template for the Physics for Medicine Paris institute. Very much
-inspired by formats found in [Awesome quarto#Presentation formats](https://github.com/mcanouil/awesome-quarto?tab=readme-ov-file#real-life-examples)
-<a href='https://felipecybis.github.io/quarto-physmed-template/' target='_blank'>
-<img src="output.gif" width="100%"/></a>
+This repository provides Quarto custom formats for slightly modified slide templates (revealjs)
+and posters (typst) that can be used by people in the Physics for Medicine Institute.
 
-The logo in the top right corner of the slides are rendered in white when the slide has
-a dark blackground by using the following config in `physmed.scss`
+Templates here are very much inspired provided by formats found in
+[Awesome quarto#Presentation formats](https://github.com/mcanouil/awesome-quarto?tab=readme-ov-file#real-life-examples).
 
-```scss
-.reveal.has-dark-background .slide-logo {
-  filter: brightness(0) invert(1) !important;
-}
-```
+| Posters (typst)                                     | Usage                                                    |
+|-------------------------|-----------------------------------------------|
+| [Physmed landscape](https://github.com/FelipeCybis/quarto-physmed-template/tree/main/physmed-poster-landscape) | `quarto use template FelipeCybis/quarto-physmed-template/physmed-poster-landscape`|
+| [Physmed portrait](https://github.com/FelipeCybis/quarto-physmed-template/tree/main/physmed-poster-portrait) | `quarto use template FelipeCybis/quarto-physmed-template/physmed-poster-portrait`|
 
-## Title image
 
-The `title-image` option is available using the `physmed-revealjs`. This adds the image
-on the left in the title slide.  
-Use `title-image: ""` to remove it.
+| Slides (revealjs)                                     | Usage                                                    |
+|-------------------------|-----------------------------------------------|
+| [Physmed landscape](https://github.com/FelipeCybis/quarto-physmed-template/tree/main/physmed-slides) | `quarto use template FelipeCybis/quarto-physmed-template/physmed-slides`|
 
-## Use
 
-Depending on your use case, here are some [Quarto CLI](https://quarto.org/)
-commands to get started.
+Alternatively, these commands can be used with `quarto install extension` instead of
+`quarto use template`. This will install the template extension without any of the
+necessary scaffolding files to start from.
 
-If you would like to add the **physmed** theme to an existing directory:
-
-```bash
-quarto install extension felipecybis/quarto-physmed-template
-```
-
-Alternatively, you can use a
-[Quarto template](https://quarto.org/docs/extensions/starter-templates.html)
-that bundles the **physmed** theme plus a .qmd starter document. This is a better
-option if you are starting a new project from scratch, since it will automatically
-create a new directory with all of the necessary scaffolding in one go.
-
-```bash
-quarto use template felipecybis/quarto-pythmed-template
-```
