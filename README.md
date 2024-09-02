@@ -2,7 +2,7 @@
 
 A revealjs slide template for the Physics for Medicine Paris institute. Very much
 inspired by formats found in [Awesome quarto#Presentation formats](https://github.com/mcanouil/awesome-quarto?tab=readme-ov-file#real-life-examples)
-<a href='https://felipecybis.github.io/quarto-rladies-theme/' target='_blank'>
+<a href='https://felipecybis.github.io/quarto-physmed-template/' target='_blank'>
 <img src="output.gif" width="100%"/></a>
 
 The logo in the top right corner of the slides are rendered in white when the slide has
