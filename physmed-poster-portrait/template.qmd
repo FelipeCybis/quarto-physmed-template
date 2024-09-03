@@ -5,11 +5,14 @@ format:
   physmed-portrait-typst: 
     poster-authors: "First Author$^{1,\\ 2}$, Second Author$^{2}$, Third Author$^{1,\\ 2}$, A lot of authors authors authors authors authors to
     make a two line author section, Co-Last Author$^{*,\\ 1}$, Co-Last Author$^{*,\\ 1,\\ 2}$"
+    poster-banner: "images/banner-poster-physmed-logos-portrait.png"
     departments: "$^1$Physics for Medicine Paris - Inserm U1273, CNRS UMR 8063, ESPCI Paris, France, $^2$Some other institution, $^*$Co-last authors"
     footer-text: "Physics for Medicine Paris"
     footer-url: "https://www.physicsformedicine.espci.fr"
     footer-emails: "abc@example.com"
     footer-color: "C0D8D4"
+    space-after-header: -20
+    margin-top: 0
     keywords: ["Typesetting", "Typst", "Quarto"]
 ---
 

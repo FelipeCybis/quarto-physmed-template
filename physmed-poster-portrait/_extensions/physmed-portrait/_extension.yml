@@ -11,8 +11,7 @@ contributes:
       title-font-size: 72
       title-row-size: 5
       title-column-size: 26
-      univ-logo-column-size: 5
-      institution-logo: "_extensions/physmed-portrait/images/banner-poster-physmed-logos-portrait.png"
+      left-title-column-size: 5
       authors-font-size: 34
       department-font-size: 34
       footer-url-font-size: 40

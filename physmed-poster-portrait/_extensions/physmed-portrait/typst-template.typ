@@ -1,4 +1,3 @@
-
 #let poster(
   // The poster's title.
   title: "Paper Title",
@@ -9,8 +8,8 @@
   // Department name.
   departments: "Department Name",
 
-  // University logo.
-  univ_logo: "Logo Path",
+  // Poster banner.
+  banner: "Banner/logos Path",
 
   // Footer text.
   // For instance, Name of Conference, Date, Location.
@@ -47,11 +46,11 @@
   // Number of columns in the poster.
   num_columns: "3",
 
-  // University logo's scale (in %).
-  univ_logo_scale: "100",
+  // Column size used as spacing to the left of the title (in in).
+  left_title_column_size: "0",
 
-  // University logo's column size (in in).
-  univ_logo_column_size: "5",
+  // Column size used as spacing to the right of the title (in in).
+  right_title_column_size: "0",
 
   // Title and authors' column size (in in).
   title_column_size: "20",
@@ -79,17 +78,19 @@
   margin_right: "1",
   margin_bottom: "2",
 
+  space_after_header: "0",
+
   // The poster's content.
   body
 ) = {
   // Set the body font.
   body_font_size = int(body_font_size) * 1pt
   set text(font: "STIX Two Text", size: body_font_size)
-  univ_logo_scale = int(univ_logo_scale) * 1%
   title_font_size = int(title_font_size) * 1pt
   authors_font_size = int(authors_font_size) * 1pt
   num_columns = int(num_columns)
-  univ_logo_column_size = float(univ_logo_column_size) * 1in
+  left_title_column_size = float(left_title_column_size) * 1in
+  right_title_column_size = float(right_title_column_size) * 1in
   title_column_size = float(title_column_size) * 1in
   title_row_size = float(title_row_size) * 1in
   footer_url_font_size = int(footer_url_font_size) * 1pt
@@ -99,6 +100,7 @@
   margin_left = float(margin_left) * 1in
   margin_right = float(margin_right) * 1in
   margin_bottom = float(margin_bottom) * 1in
+  space_after_header = float(space_after_header) * 1pt
 
   let to-string(content) = {
     if content.has("text") {
@@ -120,7 +122,7 @@
     flipped: flipped,
     margin: 
       (top: margin_top, left: margin_left, right: margin_right, bottom: margin_bottom),
-    background: align(center + top, image(univ_logo, width: univ_logo_scale)),
+    background: align(center + top, image(banner, width: 100%)),
     footer: [
       #set align(center)
       #set text(footer_url_font_size, font: "Courier")
@@ -198,17 +200,18 @@
     grid(
       align: center + horizon,
       rows: (title_row_size),
-      columns: (univ_logo_column_size, title_column_size),
+      columns: (left_title_column_size, title_column_size, right_title_column_size),
       // fill: gray,
       column-gutter: 0pt,
       row-gutter: 50pt,
-      // image(univ_logo, width: univ_logo_scale),
       "",
-      text(title_font_size, white, title + "\n", weight: 700) + v(title_font_size/2, weak: true) +
+      par(leading: 0.5em, text(title_font_size, white, title + "\n", weight: 700)) + v(title_font_size/2, weak: true) +
       text(authors_font_size, white, authors + "\n") + v(title_font_size/3, weak: true) + text(department_font_size, white, departments),
+      "",
     )
   )
-  v(5pt)
+
+  v(space_after_header)
 
   // Start three column mode and configure paragraph properties.
   show: columns.with(num_columns, gutter: 64pt)

@@ -10,11 +10,10 @@ contributes:
       title-font-size: 82
       title-column-size: 36
       title-row-size: 5
-      univ-logo-column-size: 5
-      institution-logo: "_extensions/physmed-landscape/images/banner-poster-physmed-logos-landscape.png"
+      left-title-column-size: 5
       authors-font-size: 40
       department-font-size: 38 
-      footer-url-font-size: 40
+      footer-url-font-size: 38
       footer-text-font-size: 53
       template-partials:
         - typst-template.typ

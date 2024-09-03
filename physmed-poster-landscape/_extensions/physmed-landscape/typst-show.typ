@@ -20,8 +20,8 @@
   $if(paper)$ paper: "$paper$", $endif$
   $if(flipped)$ flipped: "$flipped$", $endif$
 
-  // Institution logo.
-  $if(institution-logo)$ univ_logo: "$institution-logo$", $endif$
+  // Poster banner/logos.
+  $if(poster-banner)$ banner: "$poster-banner$", $endif$
 
   // Footer text.
   // For instance, Name of Conference, Date, Location.
@@ -53,11 +53,11 @@
   // Number of columns in the poster.
   $if(num-columns)$ num_columns: $num-columns$, $endif$
 
-  // University logo's scale (in %).
-  $if(univ-logo-scale)$ univ_logo_scale: $univ-logo-scale$, $endif$
+  // Column size used as spacing to the left of the title (in in).
+  $if(left-title-column-size)$ left_title_column_size: $left-title-column-size$, $endif$
 
-  // University logo's column size (in in).
-  $if(univ-logo-column-size)$ univ_logo_column_size: $univ-logo-column-size$, $endif$
+  // Column size used as spacing to the right of the title (in in).
+  $if(right-title-column-size)$ right_title_column_size: $right-title-column-size$, $endif$
 
   // Title and authors' column size (in in).
   $if(title-column-size)$ title_column_size: $title-column-size$, $endif$
@@ -91,6 +91,9 @@
 
   // Margin bottom (in in).
   $if(margin-bottom)$ margin_bottom: $margin-bottom$, $endif$
+
+  // Space after header information (in pt).
+  $if(space-after-header)$ space_after_header: $space-after-header$, $endif$
 
   doc,
 )
